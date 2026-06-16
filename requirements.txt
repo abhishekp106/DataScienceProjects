@@ -1,0 +1,34 @@
+# Python dependencies for the Jupyter notebooks in this repository.
+# These notebooks were authored for Google Colab; this file lets you run the
+# scientific/ML portions locally in JupyterLab. Google Colab-only pieces
+# (google.colab, PyDrive, Google Drive data ingestion) are intentionally
+# omitted since they only work inside Colab. See AGENTS.md for details.
+
+# Use CPU-only PyTorch wheels (no GPU in the dev environment).
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Jupyter
+jupyterlab
+notebook
+ipykernel
+
+# Data-science core (all notebooks)
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
+# Geospatial / decision-tree viz (CIS545FinalProject.ipynb)
+geopandas
+shapely
+pydotplus
+
+# Transformer exercise (Transformer_Exercise.ipynb)
+torch
+transformers
+datasets
+einops
+fancy_einsum
+tqdm
+plotly
